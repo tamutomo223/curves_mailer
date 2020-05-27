@@ -6,7 +6,7 @@ class NotificationMailer < ApplicationMailer
     @name = name
     mail(
       subject: "ポイント獲得", #メールのタイトル
-      to: "tamutomo223@icloud.com" #宛先
+      to: "m-kubota@curves.co.jp" #宛先
     ) do |format|
       format.text
     end

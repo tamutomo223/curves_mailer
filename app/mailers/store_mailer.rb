@@ -8,7 +8,7 @@ class StoreMailer < ApplicationMailer
     @text = text
     mail(
       subject: "#{@name}さんの#{@purpose}", #メールのタイトル
-      to: "m-kubota@curves.co.jp" #宛先
+      to: "tamutomo223@icloud.com" #宛先
     ) do |format|
       format.text
     end

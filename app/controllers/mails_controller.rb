@@ -13,4 +13,9 @@ class MailsController < ApplicationController
     StoreMailer.send_confirm_to_user(purpose,name,text).deliver
     MailCountent.create(subject:purpose,main:text)
   end
+
+  def log_get
+    @all_mail = MailCountent.all.order(created_at: "desc")
+    render json: @all_mail
+  end 
 end
